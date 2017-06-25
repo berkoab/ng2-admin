@@ -348,7 +348,20 @@ export const PAGES_MENU = [
             target: '_blank'
           }
         }
+      },
+      {
+        path: 'phonecalls',  // path for our page
+        data: { // custom menu declaration
+          menu: {
+            title: 'Phone Calls', // menu title
+            icon: 'ion-ios-telephone', // menu icon
+            pathMatch: 'prefix', // use it if item children not displayed in menu
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
       }
-    ]
+    ]    
   }
 ];
